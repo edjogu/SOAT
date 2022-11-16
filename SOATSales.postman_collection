@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "f17086aa-9475-4936-ae43-72e03060ad44",
+		"name": "SOATSales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Polizas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/policies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Poliza",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user1@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/policies/ABC547",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"policies",
+						"ABC547"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Poliza (unexisting)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/policies/ABC111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"policies",
+						"ABC111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Poliza",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user1@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstName\" : \"Valeria\",\r\n\t\"lastName\" : \"Casas\",\r\n    \"policyNumber\" : \"88769000899500\",\r\n    \"dateOfIssue\" : \"2021-03-10T00:00:00\",\r\n    \"dateOfStart\" : \"2021-03-11T00:00:00\",\r\n    \"dateOfExpiration\" : \"2022-03-10T00:00:00\",\r\n\t\"licencePlate\": \"XXX999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/policies/5b1c2b4d-48c7-402a-80c3-cc796ad49c6b/policies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"policies",
+						"5b1c2b4d-48c7-402a-80c3-cc796ad49c6b",
+						"policies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
