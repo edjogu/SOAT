@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOATSales.API", "SOATSales.API\SOATSales.API.csproj", "{277EC0F0-5480-47B8-A86D-DF2ECE9A000A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277EC0F0-5480-47B8-A86D-DF2ECE9A000A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277EC0F0-5480-47B8-A86D-DF2ECE9A000A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277EC0F0-5480-47B8-A86D-DF2ECE9A000A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277EC0F0-5480-47B8-A86D-DF2ECE9A000A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {461FE76D-5058-443D-91B0-CDE3E797DB97}
+	EndGlobalSection
+EndGlobal
